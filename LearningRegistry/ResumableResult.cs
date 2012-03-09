@@ -29,7 +29,7 @@ namespace LearningRegistry
 		public ResumableResult GetNextPage()
 	        {
 	            if(!this.HasMoreRecords)
-					throw new System.IndexOutOfRangeException("No resumption token present");
+			throw new System.IndexOutOfRangeException("No resumption token present");
 	            _Args["resumption_token"] = resumption_token;
 	            return getPage();
 	        }
